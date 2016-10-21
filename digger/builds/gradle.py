@@ -121,6 +121,7 @@ class GradleBuild(BaseBuild):
     cmd = [
       './gradlew',
       ref.get(mode, mode),
+      '--stacktrace',
       '--gradle-user-home',
       self.cache_folder 
     ]
